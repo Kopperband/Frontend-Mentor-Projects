@@ -1,0 +1,104 @@
+
+:root{
+    --text-color:rgb(139, 147, 156);
+    --green-color:rgb(84, 159, 116);
+}
+*{
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    background-color:beige;
+}
+
+.container{
+    margin:10%;
+    display:flex;
+    
+    position: relative;
+    text-align: center;
+    justify-self: center;
+    background-color:#fff;
+    width:700px;
+    height:500px;
+    border-radius: 15px 15px 15px 15px;
+}
+.text{
+    order:2;
+    display:flex;
+    flex-direction: column;
+    width:300px;
+
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    font-size: 8;
+    margin:30px 0px 0px 30px;
+    text-align: left;
+    color: var(--text-color);
+}
+h1{
+    
+    margin: 20px 70px 0px 30px;
+    font-size:50;
+    text-align: left;
+    font-weight: bolder;
+}
+p.desc{
+    margin:20px 25px 0px 30px;
+    text-align: left;
+    font-size: large;
+    color: var(--text-color);
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    
+}
+p.sale{
+    text-align: center;
+    font-size: 40px;
+    color: var(--green-color);
+    margin:30px 20px 30px 30px;
+    font-weight: bolder;
+    
+}
+p.non-sale{
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 43px 20px 30px 10px;
+    text-decoration: line-through;
+}
+.btn{
+    background-image: url(/images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 1em;
+align-self: center;
+border-color: var(--green-color);
+background-color: var(--green-color);
+height: 50px;
+width:250px;
+border-radius: 10px;
+color:#fff;
+font-size: 1em;
+font-weight: bold;
+}
+
+
+img{
+    order:1;
+    align-self: center;
+    border-radius: 15px 0px 0px 15px;
+    width:50%;
+    height:500px;
+}
